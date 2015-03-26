@@ -4,9 +4,11 @@
     angular.module('Home', []);
     angular.module('About', []);
     angular.module('Posts', []);
+    angular.module('Contact', []);
     angular.module('BredditStarter', [
         'Home',
         'About,
+        'Contact',
         'Posts'
     ])
     .config(function ($stateProivder, $urlRouterProvider, $httpProvider) {

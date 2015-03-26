@@ -48,16 +48,16 @@ Website: http://www.raleighand.co
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a ui-href="#home">Breddit</a></li>
-            <li><a ui-href="#about">About</a></li>
-            <li><a ui-href="posts">Posts</a></li>
-            <li><a ui-href="#contact">Contact</a></li>
+            <li><a ui-sref="#home">Breddit</a></li>
+            <li><a ui-sref="#about">About</a></li>
+            <li><a ui-sref="posts">Posts</a></li>
+            <li><a ui-sref="#contact">Contact</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a ui-href="#">Action</a></li>
-                <li><a ui-href="#">Another action</a></li>
-                <li><a ui-href="#">Something else here</a></li>
+                <li><a ui-sref="#">Action</a></li>
+                <li><a ui-sref="#">Another action</a></li>
+                <li><a ui-sref="#">Something else here</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">Nav header</li>
                 <li><a href="#">Separated link</a></li>
@@ -85,7 +85,7 @@ Website: http://www.raleighand.co
           <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
         </p>
       </div>
-      <ui-view></ui-view>    
+      <div ui-view></div>    
     </div> <!-- /container -->
 
     <!-- Bootstrap core JavaScript
@@ -98,5 +98,9 @@ Website: http://www.raleighand.co
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
     <script src="app/app.js"></script>
+    <script src="app/states/home/home.controller.js"></script>
+    <script src="app/states/home/about.controller.js"></script>
+    <script src="app/states/home/posts.controller.js"></script>
+    <script src="app/states/home/contact.controller.js"></script>
   </body>
 </html>
