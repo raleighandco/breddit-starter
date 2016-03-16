@@ -1,6 +1,5 @@
 //IFFE Function
 (function () {
-    'use strict';
     angular.module('Home', []);
     angular.module('About', []);
     angular.module('Posts', []);
@@ -17,22 +16,22 @@
         $stateProvider
         .state('home', {
             url: "/home",
-            templateUrl: "/app/states/home/home.html",
+            templateUrl: "app/states/home/home.html",
             controller: "Home"
         })
         .state('about', {
             url: "/about", 
-            templateUrl: "/app/states/about/about.html",
+            templateUrl: "app/states/about/about.html",
             controller: "About"
         })
         .state('posts', {
             url: "/posts",
-            templateUrl: "/app/states/posts/posts.html",
+            templateUrl: "app/states/posts/posts.html",
             controller: "Posts"
         })
         .state('contact', {
             url: "/contact",
-            templateUrl: "/app/states/contact/contact.html",
+            templateUrl: "app/states/contact/contact.html",
             controller: "Contact"
         })
     });

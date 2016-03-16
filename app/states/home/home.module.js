@@ -1,5 +1,5 @@
 (function () {
-    'use strict';
+    "use strict";
     angular.module('Home')
         .controller('Home', ['$scope', '$location', '$anchorScroll',
         function ($scope, $location, $anchorScroll) {
